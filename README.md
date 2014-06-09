@@ -73,3 +73,8 @@ Add the following lines to your AndroidManifest.xml within the <code>&lt;applica
 &lt;/receiver&gt;
 </code>
 </pre>
+
+<H4>Configure Facebook Integration</H4>
+
+6) To user facebook in your Appvirality campaign as an <b>action</b>(i.e coupon unlocking action) , you will need a Facebook App ID.
+If you already have a Facebook App, you can verify the Facebook App creation process once again <a href="#">here</a>
