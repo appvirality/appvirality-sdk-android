@@ -61,7 +61,7 @@ Don't forget to replace the key "02e1r5e99b94f56t69f42a32a00d2e7ff" with your Ap
 &lt;/manifest&gt;
 </code>
 </pre>
-Add the following lines to your AndroidManifest.xml within the <application...> element
+Add the following lines to your AndroidManifest.xml within the &lt;application...&gt; element
 
 <pre>
 <code>
