@@ -43,7 +43,7 @@ Don't forget to replace the key "02e1r5e99b94f56t69f42a32a00d2e7ff" with your Ap
 <H4>Configure your AndroidManifest.xml</H4>
 
 5) Add the following lines to your AndroidManifest.xml within the 
-<pre>&lt;</pre>manifest...<pre>&gt;</pre>
+<code>&lt;</code>manifest...<code>&gt;</code>
 
 <pre>
 <code>
