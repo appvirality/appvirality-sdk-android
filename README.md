@@ -89,4 +89,26 @@ appvirality.appkey = 02e1r5e99b94f56t69f42a32a00d2e7ff
 graph.facebook.com.consumer_key = 0000000000
 </code>
 </pre>
-(don't forget to replace "0000000000" with your Facebook APP ID)
+(don't forget to replace "0000000000" with your Facebook App ID)
+
+<H4>Include Appvirality in Your App</H4>
+
+Now you have done all the configurations required. It's time to include Appvirality into your App
+
+Just add the following line of code in your project(preferably in MainActivity.java). 
+<pre>
+<code>
+AppviralityAPI.Initialize(this);
+</code>
+</pre>
+And add the following line where ever you want to show your offer created from Appvirality Dashboard.
+<pre>
+<code>
+AppviralityAPI.showLaunchBar(this);
+</code>
+</pre>
+
+
+Boom..Sitback and witch the show by creating the campaigns from Appvirality Dashboard. 
+
+
