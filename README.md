@@ -42,5 +42,23 @@ Don't forget to replace the key "02e1r5e99b94f56t69f42a32a00d2e7ff" with your Ap
 
 <H4>Configure your AndroidManifest.xml</H4>
 
-5) 
+5) Add the following lines to your AndroidManifest.xml within the <manifest...> element (above the <application...> element)
+<pre>
+<code>
+<manifest...>
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />       
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    
+     <application.../>
+
+</manifest> 
+</code>
+</pre>
+Add the following lines to your AndroidManifest.xml within the <application...> element
+
 
