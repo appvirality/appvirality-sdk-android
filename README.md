@@ -65,11 +65,11 @@ Add the following lines to your AndroidManifest.xml within the <application...> 
 
 <pre>
 <code>
- <activity android:name="com.appvirality.android.AuthorizeFacebook" android:theme="@android:style/Theme.NoDisplay" />
-<receiver android:name="com.appvirality.android.AppviralityInstallReferrerReceiver" android:exported="true" >
-    <intent-filter>
-         <action android:name="com.android.vending.INSTALL_REFERRER" />
-    </intent-filter>
-</receiver>
+ &lt;activity android:name="com.appvirality.android.AuthorizeFacebook" android:theme="@android:style/Theme.NoDisplay" /&gt;
+&lt;receiver android:name="com.appvirality.android.AppviralityInstallReferrerReceiver" android:exported="true" &gt;
+    &lt;intent-filter&gt;
+         &lt;action android:name="com.android.vending.INSTALL_REFERRER" /&gt;
+    &lt;/intent-filter&gt;
+&lt;/receiver&gt;
 </code>
 </pre>
