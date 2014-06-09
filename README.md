@@ -2,9 +2,7 @@ Appvirality Android SDK
 =======================
 
 <H3>Introduction:</H3>
-Appvirality is a Plug and Play Growth Hacking Toolkit for Mobile Apps.Identify and Implement the right growth hacks, within seconds. No Coding Required.
-
-We are providing easy to integrate SDK's for Android, iOS(coming soon) and Windows Phone(coming soon) Platforms.
+Appvirality is a Plug and Play Growth Hacking Toolkit for Mobile Apps.It helps to identify and Implement the right growth hacks, within seconds. No Coding Required. <br/>We are providing easy to integrate SDK's for Android, iOS(coming soon) and Windows Phone(coming soon) Platforms.
 
 Integrating Appvirality into your App
 -------------------------------------
