@@ -63,4 +63,13 @@ Don't forget to replace the key "02e1r5e99b94f56t69f42a32a00d2e7ff" with your Ap
 </pre>
 Add the following lines to your AndroidManifest.xml within the <application...> element
 
-
+<pre>
+<code>
+ <activity android:name="com.appvirality.android.AuthorizeFacebook" android:theme="@android:style/Theme.NoDisplay" />
+<receiver android:name="com.appvirality.android.AppviralityInstallReferrerReceiver" android:exported="true" >
+    <intent-filter>
+         <action android:name="com.android.vending.INSTALL_REFERRER" />
+    </intent-filter>
+</receiver>
+</code>
+</pre>
