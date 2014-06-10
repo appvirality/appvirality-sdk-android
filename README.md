@@ -99,11 +99,9 @@ graph.facebook.com.consumer_key = 0000000000
 </pre>
 NOTE: Don't forget to replace "0000000000" with your Facebook App ID.
 
-<H4>Include Appvirality in Your App</H4>
+<H4>Initializing the Appvirality SDK</H4>
 
-Now you have done all the configurations required. It's time to include Appvirality into your App
-
-Just add the following line of code in your project(preferably in MainActivity.java). 
+To use the Appvirality SDK , you must first initialize it by calling <b>AppviralityAPI.Initialize</b> with your application context. This method in Appvirality must be called before you use other features. Please call this method on the <b>onResume()</b> method of your Activity class.(preferably in your main application activity). 
 <pre>
 <code>
 AppviralityAPI.Initialize(context);
