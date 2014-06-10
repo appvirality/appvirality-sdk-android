@@ -70,10 +70,7 @@ Add the following lines to your AndroidManifest.xml within the <code>&lt;applica
             android:name="com.appvirality.android.AuthorizeFacebook"
             android:theme="@android:style/Theme.NoDisplay" /&gt;
 
-        &lt;!--
-     This receiver will allow your application to record referrer
-             parameters to track your app downloads
-        --&gt;
+        &lt;!--This receiver will allow your application to record referrer parameters to track your app downloads--&gt;
         &lt;receiver
             android:name="com.appvirality.android.AppviralityInstallReferrerReceiver"
             android:exported="true" &gt;
