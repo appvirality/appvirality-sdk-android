@@ -66,12 +66,13 @@ Add the following lines to your AndroidManifest.xml within the <code>&lt;applica
 <pre>
 <code>
 &lt;!-- This activity required to identify campaign participants with Facebook Authorization.--&gt;
- &lt;activity android:name="com.appvirality.android.AuthorizeFacebook" 
-                                  android:theme="@android:style/Theme.NoDisplay" /&gt;
+&lt;activity android:name="com.appvirality.android.AuthorizeFacebook" 
+             android:theme="@android:style/Theme.NoDisplay" /&gt;
+             
 &lt;!-- This receiver will allow your application to record referrer
              parameters to track your app downloads --&gt;                                  
 &lt;receiver android:name="com.appvirality.android.AppviralityInstallReferrerReceiver"
-                                  android:exported="true"&gt;
+             android:exported="true"&gt;
     &lt;intent-filter&gt;
          &lt;action android:name="com.android.vending.INSTALL_REFERRER" /&gt;
     &lt;/intent-filter&gt;
