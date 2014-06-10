@@ -98,16 +98,17 @@ Now you have done all the configurations required. It's time to include Appviral
 Just add the following line of code in your project(preferably in MainActivity.java). 
 <pre>
 <code>
-AppviralityAPI.Initialize(this);
+AppviralityAPI.Initialize(context);
 </code>
 </pre>
 And add the following line where ever you want to show your offer created from Appvirality Dashboard.
 <pre>
 <code>
-AppviralityAPI.showLaunchBar(this);
+AppviralityAPI.showLaunchBar(ClassName.this);
 </code>
 </pre>
 
+NOTE: Replace "ClassName" with your Activity Class Name where you are calling "ShowLaunchBar".
 
 Boom..Sitback and witch the show by creating the campaigns from Appvirality Dashboard. 
 
