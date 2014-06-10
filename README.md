@@ -103,7 +103,7 @@ NOTE: Don't forget to replace "0000000000" with your Facebook App ID.
 
 <H4>Initializing the Appvirality SDK</H4>
 
-To use the Appvirality SDK , you must first initialize it by calling <b>AppviralityAPI.Initialize</b> with your application context. This method in Appvirality must be called before you use other features. Please call this method on the <b>onResume()</b> method of your Activity class.(preferably in your main application activity). 
+7) To use the Appvirality SDK , you must first initialize it by calling <b>AppviralityAPI.Initialize</b> with your application context. This method in Appvirality must be called before you use other features. Please call this method on the <b>onResume()</b> method of your Activity class.(preferably in your main application activity). 
 <pre>
 <code>
 AppviralityAPI.Initialize(context);
@@ -118,6 +118,13 @@ AppviralityAPI.showLaunchBar(ClassName.this);
 
 NOTE: Replace "ClassName" with your Activity Class Name where you are calling "ShowLaunchBar".
 
-Boom..Sitback and witch the show by creating the campaigns from Appvirality Dashboard. 
+<H4>Finished Integration</H4>
+
+Congratulations!
+You have successfully completed the integration process. 
+
+<H4>Whats Next</H4>
+
+Sitback and witch the show by creating the campaigns from Appvirality Dashboard. 
 
 
