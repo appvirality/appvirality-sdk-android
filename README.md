@@ -65,8 +65,12 @@ Add the following lines to your AndroidManifest.xml within the <code>&lt;applica
 
 <pre>
 <code>
- &lt;activity android:name="com.appvirality.android.AuthorizeFacebook" /&gt;
-&lt;receiver android:name="com.appvirality.android.AppviralityInstallReferrerReceiver"&gt;
+ &lt;activity android:name="com.appvirality.android.AuthorizeFacebook" 
+                                  android:theme="@android:style/Theme.NoDisplay" /&gt;
+<!-- This receiver will allow your application to record referrer
+             parameters as super properties automatically -->                                  
+&lt;receiver android:name="com.appvirality.android.AppviralityInstallReferrerReceiver"
+                                  android:exported="true"&gt;
     &lt;intent-filter&gt;
          &lt;action android:name="com.android.vending.INSTALL_REFERRER" /&gt;
     &lt;/intent-filter&gt;
