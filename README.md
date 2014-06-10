@@ -84,8 +84,10 @@ Add the following lines to your AndroidManifest.xml within the <code>&lt;applica
 
 <H4>Configure Facebook Integration</H4>
 
-6) To user facebook in your Appvirality campaign as an <b>action</b>(i.e coupon unlocking action) , you will need a Facebook App ID.
-If you already have a Facebook App, you can verify the Facebook App creation process once again <a href="#">here</a>
+6) To use Facebook as a action type (share to claim coupon, etc) in your campaign, you will need a Facebook App ID.
+If you already have a Facebook App, you may want to verify the Facebook App creation process once again <a href="#">here</a>. 
+
+If you don't have a Facebook App, you can create one easily by followig the <a href="#">steps to create Facebook App</a>.
 
 Once you have your facebook app ID, you can add it to the <b>oauth_consumer.properties</b> config file:
 <pre>
