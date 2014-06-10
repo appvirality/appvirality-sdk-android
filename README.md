@@ -125,6 +125,6 @@ You have successfully completed the integration process.
 
 <H4>Whats Next</H4>
 
-Sitback and witch Appvirality in action by creating the campaigns from Appvirality Dashboard. 
+Sitback and witch Appvirality in action by creating the campaigns from <a href="http://appvirality.com">Appvirality Dashboard.</a>
 
 
