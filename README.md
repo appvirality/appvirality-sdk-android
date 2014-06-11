@@ -25,7 +25,7 @@ Integrating Appvirality into your App
 
 ![Alt text](images/App-key-obtaining.jpg?raw=true)
 
-4) Create a configuration file in the <b>assets</b> path of your project called <b>oauth_consumer.properties</b>
+4) Create a configuration file in the <b>assets</b> path of your project called <b>avkeys.properties</b>
 
 ![Alt text](images/setup-av-keys.jpg?raw=true)
 
@@ -89,7 +89,7 @@ If you already have a Facebook App, you may want to verify the Facebook App crea
 
 If you don't have a Facebook App, you can create one easily by followig the <a href="#">steps to create Facebook App</a>.
 
-Once you have your facebook app ID, you can add it to the <b>oauth_consumer.properties</b> config file:
+Once you have your facebook app ID, you can add it to the <b>avkeys.properties</b> config file:
 <pre>
 <code>
 #Appvirality App Key
@@ -106,7 +106,7 @@ NOTE: Don't forget to replace "0000000000" with your Facebook App ID.
 7) To use the Appvirality SDK , you must first initialize it by calling <b>AppviralityAPI.Initialize</b> with your application context. This method in Appvirality must be called before you use other features. Please call this method on the <b>onResume()</b> method of your Activity class.(preferably in your main application activity). 
 <pre>
 <code>
-AppviralityAPI.Initialize(context);
+AppviralityAPI.Initialize(getApplicationContext());
 </code>
 </pre>
 And add the following line where ever you want to show your offer created from Appvirality Dashboard.
