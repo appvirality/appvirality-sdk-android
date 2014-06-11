@@ -115,7 +115,7 @@ You have successfully completed the integration process.
 
 Sitback and witch Appvirality in action by creating the campaigns from <a href="http://appvirality.com">Appvirality Dashboard.</a>
 
-<H3>Proguard Configurations</H3>
+<H3>Proguard Configuration</H3>
 
 If you use proguard with your application, there are a set of rules that you will need to include to get Appvirality to work. Appvirality will not function correctly if proguard obfuscates its classes.
 
@@ -127,7 +127,7 @@ If you use proguard with your application, there are a set of rules that you wil
 -dontwarn com.appvirality.android.**
 </code></pre>
 
-<H3>[OPTIONAL] Custom Action to Launch Growth Hack Screen</H3>
+<H3>[OPTIONAL]Launch Growth Hack Screen on Custom Event</H3>
 
 You can also launch the Growth Hack screen when a user taps on a button or anyother event. You can simply call showGrowthHackScreen() method to launch GrowthHack screen.
 
