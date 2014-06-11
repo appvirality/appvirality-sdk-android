@@ -31,12 +31,10 @@ Integrating Appvirality into your App
 
    Within this file, enter your Appvirality App key:
    
-<pre>
-<code>
+<pre><code>
 #Appvirality App Key
 appvirality.appkey = 02e1r5e99b94f56t69f42a32a00d2e7ff
-</code>
-</pre>
+</code></pre>
 
 NOTE: Don't forget to replace the key "02e1r5e99b94f56t69f42a32a00d2e7ff" with your App key.
 
@@ -45,8 +43,7 @@ NOTE: Don't forget to replace the key "02e1r5e99b94f56t69f42a32a00d2e7ff" with y
 5) Add the following lines to your AndroidManifest.xml within the 
 <code>&lt;manifest...&gt;</code>
 
-<pre>
-<code>
+<pre><code>
 &lt;manifest...&gt;
 
    &lt;uses-sdk android:minSdkVersion="8" android:targetSdkVersion="19" /&gt;
@@ -59,12 +56,10 @@ NOTE: Don't forget to replace the key "02e1r5e99b94f56t69f42a32a00d2e7ff" with y
      <application.../&gt;
 
 &lt;/manifest&gt;
-</code>
-</pre>
+</code></pre>
 Add the following lines to your AndroidManifest.xml within the <code>&lt;application...&gt;</code> element
 
-<pre>
-<code>
+<pre><code>
         &lt;!-- This activity required to identify campaign participants with Facebook Authorization. --&gt;
         &lt;activity
             android:name="com.appvirality.android.AuthorizeFacebook"
@@ -79,8 +74,7 @@ Add the following lines to your AndroidManifest.xml within the <code>&lt;applica
                 &lt;action android:name="com.android.vending.INSTALL_REFERRER" /&gt;
             &lt;/intent-filter&gt;
         &lt;/receiver&gt;
-</code>
-</pre>
+</code></pre>
 
 <H4>Configure Facebook Integration</H4>
 
@@ -90,33 +84,27 @@ If you already have a Facebook App, you may want to verify the Facebook App crea
 If you don't have a Facebook App, you can create one easily by followig the <a href="#">steps to create Facebook App</a>.
 
 Once you have your facebook app ID, you can add it to the <b>avkeys.properties</b> config file:
-<pre>
-<code>
+<pre><code>
 #Appvirality App Key
 appvirality.appkey = 02e1r5e99b94f56t69f42a32a00d2e7ff
 
 #facebook
 graph.facebook.com.consumer_key = 0000000000
-</code>
-</pre>
+</code></pre>
 NOTE: Don't forget to replace "0000000000" with your Facebook App ID.
 
 <H4>Initializing the Appvirality SDK</H4>
 
 7) To use the Appvirality SDK , you must first initialize it by calling <b>AppviralityAPI.Initialize</b> with your application context. This method in Appvirality must be called before you use other features. Please call this method on the <b>onResume()</b> method of your Activity class.(preferably in your main application activity). 
-<pre>
-<code>
+<pre><code>
 AppviralityAPI.Initialize(getApplicationContext());
-</code>
-</pre>
+</code></pre>
 And add the following line where ever you want to show your offer created from Appvirality Dashboard.
-<pre>
-<code>
-AppviralityAPI.showLaunchBar(ClassName.this);
-</code>
-</pre>
+<pre><code>
+AppviralityAPI.showLaunchBar(MyActivity.this);
+</code></pre>
 
-NOTE: Replace "ClassName" with your Activity Class Name where you are calling "ShowLaunchBar".
+NOTE: Replace "MyActivity" with your Activity Class Name.
 
 <H4>Finished Integration</H4>
 
@@ -126,5 +114,34 @@ You have successfully completed the integration process.
 <H4>Whats Next</H4>
 
 Sitback and witch Appvirality in action by creating the campaigns from <a href="http://appvirality.com">Appvirality Dashboard.</a>
+
+<H3>Proguard Configurations</H3>
+
+If you use proguard with your application, there are a set of rules that you will need to include to get Appvirality to work. Appvirality will not function correctly if proguard obfuscates its classes.
+
+<pre><code>
+-keep class com.appvirality.android.** { *; }
+-dontwarn com.appvirality.android.**
+</code></pre>
+
+<H3>[OPTIONAL]Custom Action to Show Growth Hack</H3>
+
+You can also show the Growth Hack screen when the user clicks on a button or based on anyother action. You can simply call showGrowthHackScreen() method to launch GrowthHack screen.
+
+Lets say you want to Launch GrowthHack screen on button click , use following code
+
+<pre><code>
+// Integrate GrowthHack Screen into a button on your view       
+myCustomButton.setOnClickListener(new OnClickListener()
+{
+    @Override
+    public void onClick(View view)
+    {
+        Appvirality.showGrowthHackScreen(MyActivity.this);                
+    }
+}
+);
+</code></pre>
+
 
 
