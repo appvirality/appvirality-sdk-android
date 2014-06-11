@@ -95,7 +95,7 @@ NOTE: Don't forget to replace "0000000000" with your Facebook App ID.
 
 <H4>Initializing the Appvirality SDK</H4>
 
-7) To use the Appvirality SDK , you must first initialize it by calling <b>AppviralityAPI.Initialize</b> with your application context. This method in Appvirality must be called before you use other features. Please call this method on the <b>onResume()</b> method of your Activity class.(preferably in your main application activity). 
+7) To use the Appvirality SDK , you must first initialize it by calling <b>AppviralityAPI.init</b> with your application context. This method in Appvirality must be called before you use other features. Please call this method on the <b>onResume()</b> method of your Activity class.(preferably in your main application activity). 
 <pre><code>
 AppviralityAPI.init(getApplicationContext());
 </code></pre>
