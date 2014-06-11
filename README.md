@@ -25,7 +25,7 @@ Integrating Appvirality into your App
 
 ![Alt text](images/App-key-obtaining.jpg?raw=true)
 
-4) Create a configuration file in the <b>assets</b> path of your project called <b>avkeys.properties</b>
+4) Create a configuration file in the <b>assets</b> path of your project called <b>appvirality.properties</b>
 
 ![Alt text](images/setup-av-keys.jpg?raw=true)
 
@@ -83,7 +83,7 @@ If you already have a Facebook App, you may want to verify the Facebook App crea
 
 If you don't have a Facebook App, you can create one easily by followig the <a href="#">steps to create Facebook App</a>.
 
-Once you have your facebook app ID, you can add it to the <b>avkeys.properties</b> config file:
+Once you have your facebook app ID, you can add it to the <b>appvirality.properties</b> config file:
 <pre><code>
 #Appvirality App Key
 appvirality.appkey = 02e1r5e99b94f56t69f42a32a00d2e7ff
