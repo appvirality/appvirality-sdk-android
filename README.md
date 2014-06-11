@@ -15,7 +15,7 @@ Integrating Appvirality into your App
 
 ![Alt text](images/download-SDK.jpg?raw=true "You can see this in Appvirality Dashboard")
 
-2) We are providing SDK in the form of <b>jar</b> file. Simply copy the <b>Appvirality.jar</b> into your <b>libs</b> folder of Android eclipse project.
+2) We are providing SDK in the form of <b>jar</b> file. Simply copy the <b>AppviralitySDK.jar</b> into your <b>libs</b> folder of Android eclipse project.
 
 ![Alt text](images/Add-Appvirality-SDK-to-libs.jpg?raw=true)
 
@@ -120,6 +120,9 @@ Sitback and witch Appvirality in action by creating the campaigns from <a href="
 If you use proguard with your application, there are a set of rules that you will need to include to get Appvirality to work. Appvirality will not function correctly if proguard obfuscates its classes.
 
 <pre><code>
+# Add the Appvirality JAR file as a library jar
+-libraryjars libs/AppviralitySDK.jar
+
 -keep class com.appvirality.android.** { *; }
 -dontwarn com.appvirality.android.**
 </code></pre>
