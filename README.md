@@ -79,9 +79,9 @@ Add the following lines to your AndroidManifest.xml within the <code>&lt;applica
 <H4>Configure Facebook Integration</H4>
 
 6) To use Facebook as a action type (share to claim coupon, etc) in your campaign, you will need a Facebook App ID.
-If you already have a Facebook App, you may want to verify the Facebook App creation process once again <a href="#">here</a>. 
+If you already have a Facebook App, you may want to verify the Facebook App creation process once again <a href="https://github.com/appvirality/appvirality-sdk-android/wiki/Facebook-Integration-with-Appvirality">here</a>. 
 
-If you don't have a Facebook App, you can create one easily by followig the <a href="#">steps to create Facebook App</a>.
+If you don't have a Facebook App, you can create one easily by followig the <a href="https://github.com/appvirality/appvirality-sdk-android/wiki/Facebook-Integration-with-Appvirality">steps to create Facebook App</a>.
 
 Once you have your facebook app ID, you can add it to the <b>appvirality.properties</b> config file:
 <pre><code>
