@@ -113,7 +113,7 @@ You have successfully completed the integration process.
 
 <H4>Whats Next</H4>
 
-Sitback and witch Appvirality in action by creating the campaigns from <a href="http://appvirality.com">Appvirality Dashboard.</a>
+Sitback and witch Appvirality in action by creating the campaigns from <a href="http://appvirality.com/DashBoard">Appvirality Dashboard.</a>
 
 <H3>Proguard Configuration</H3>
 
