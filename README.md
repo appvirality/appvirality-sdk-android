@@ -97,7 +97,7 @@ NOTE: Don't forget to replace "0000000000" with your Facebook App ID.
 
 7) To use the Appvirality SDK , you must first initialize it by calling <b>AppviralityAPI.Initialize</b> with your application context. This method in Appvirality must be called before you use other features. Please call this method on the <b>onResume()</b> method of your Activity class.(preferably in your main application activity). 
 <pre><code>
-AppviralityAPI.Initialize(getApplicationContext());
+AppviralityAPI.init(getApplicationContext());
 </code></pre>
 And add the following line where ever you want to show your offer created from Appvirality Dashboard.
 <pre><code>
