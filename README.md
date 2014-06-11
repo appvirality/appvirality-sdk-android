@@ -124,9 +124,9 @@ If you use proguard with your application, there are a set of rules that you wil
 -dontwarn com.appvirality.android.**
 </code></pre>
 
-<H3>[OPTIONAL]Custom Action to Show Growth Hack</H3>
+<H3>[OPTIONAL] Custom Action to Launch Growth Hack Screen</H3>
 
-You can also show the Growth Hack screen when the user clicks on a button or based on anyother action. You can simply call showGrowthHackScreen() method to launch GrowthHack screen.
+You can also launch the Growth Hack screen when a user taps on a button or anyother event. You can simply call showGrowthHackScreen() method to launch GrowthHack screen.
 
 Lets say you want to Launch GrowthHack screen on button click , use following code
 
