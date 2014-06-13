@@ -49,8 +49,10 @@ NOTE: Don't forget to replace the key "02e1r5e99b94f56t69f42a32a00d2e7ff" with y
    &lt;uses-sdk android:minSdkVersion="8" android:targetSdkVersion="19" /&gt;
 
     &lt;uses-permission android:name="android.permission.INTERNET" /&gt;
-    &lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /&gt;       
+    &lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /&gt;  
+    &lt;!-- Optional permissions. GET_ACCOUNTS is used to pre-populate customer's email in form fields. --&gt;
     &lt;uses-permission android:name="android.permission.GET_ACCOUNTS" /&gt;
+    &lt;!-- Optional permissions. USE_CREDENTIALS is used to user experience white using twitter tweet. --&gt;
     &lt;uses-permission android:name="android.permission.USE_CREDENTIALS" /&gt;
     
      <application.../&gt;
