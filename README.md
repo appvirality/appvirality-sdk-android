@@ -152,7 +152,7 @@ myCustomButton.setOnClickListener(new OnClickListener()
 );
 </code></pre>
 
-<H3>[OPTIONAL]Exclude Premium App Users</H3>
+<H3>[OPTIONAL]Exclude Premium Users</H3>
 
 Premium app users can be excluded from showing growth hacks. At the time of initializing the Appvirality SDK, you can set the property <code>isPremiumUser</code>
 
