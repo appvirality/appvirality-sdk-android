@@ -133,7 +133,7 @@ If you use proguard with your application, there are a set of rules that you wil
 -dontwarn com.appvirality.android.**
 </code></pre>
 
-<H3>[OPTIONAL]Launch Growth Hack Screen on Custom Event</H3>
+<H3>[Optional]Launch Growth Hack Screen on Custom Event</H3>
 
 You can also launch the Growth Hack screen when a user taps on a button or anyother event. You can simply call showGrowthHackScreen() method to launch GrowthHack screen.
 
@@ -152,7 +152,7 @@ myCustomButton.setOnClickListener(new OnClickListener()
 );
 </code></pre>
 
-<H3>[OPTIONAL]Exclude Premium Users</H3>
+<H3>[Optional]Exclude Premium Users</H3>
 
 Premium app users can be excluded from showing growth hacks. At the time of initializing the Appvirality SDK, you can set the property <code>isPremiumUser</code>
 
