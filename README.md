@@ -56,6 +56,8 @@ NOTE: Don't forget to replace the key "02e1r5e99b94f56t69f42a32a00d2e7ff" with y
     &lt;uses-permission android:name="android.permission.GET_ACCOUNTS" /&gt;
     &lt;!-- Optional permissions. USE_CREDENTIALS is used to user experience white using twitter tweet. --&gt;
     &lt;uses-permission android:name="android.permission.USE_CREDENTIALS" /&gt;
+    &lt;!-- Optional permissions. WRITE_EXTERNAL_STORAGE is used to improve the performance by storing campaign images. --&gt;
+    &lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /&gt;
     
      <application.../&gt;
 
@@ -117,7 +119,7 @@ You have successfully completed the integration process.
 
 <H4>Whats Next</H4>
 
-Sitback and witch Appvirality in action by creating the campaigns from <a href="http://appvirality.com/DashBoard">Appvirality Dashboard.</a>
+Sitback and witch Appvirality in action by creating the campaigns from <a href="http://www.appvirality.com/DashBoard">Appvirality Dashboard.</a>
 
 <H3>Proguard Configuration</H3>
 
