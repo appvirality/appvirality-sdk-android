@@ -197,7 +197,7 @@ If you are using any custom fonts in your app, you can set the same to your Appv
 
 ![Alt text](images/custom-fonts.jpg?raw=true)
 
-2) Let Appvirality SDk know your custom font Location, Font name and Font Size. You can set two font variants i.e Blod font <code>AppviralityAPI.Custom_Font_Bold</code> for Titles and Normal font <code>AppviralityAPI.Custom_Font_Normal</code> for description in Growth Hack Screens.
+2) Let Appvirality SDK know your custom font Location, Font name and Font Size. You can set two font variants i.e Blod font <code>AppviralityAPI.Custom_Font_Bold</code> for Titles and Normal font <code>AppviralityAPI.Custom_Font_Normal</code> for description in Growth Hack Screens.
 
 For example, if you want to set custom font located in "assets/fonts" folder with font size of "14".
 You can use the following code 
