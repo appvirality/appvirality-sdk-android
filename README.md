@@ -161,7 +161,7 @@ myCustomButton.setOnClickListener(new OnClickListener()
 );
 </code></pre>
 
-<H4>Getting Launch Message</H4>
+<H3>Getting Launch Message Configured in Dashboard</H3>
 
 if you want to use custom event to lauch the GrowthHack and want to show the lauch message configured in your Appvirality Dashboard, you can use <code>AppviralityAPI.launchMessage;</code>. see the following example.
 
