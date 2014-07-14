@@ -144,7 +144,7 @@ If you use proguard with your application, there are a set of rules that you wil
 
 <H3>[Optional]Launch Growth Hack on Custom Event</H3>
 
-You can also launch the Growth Hack screen when a user taps on a button or anyother event. You can simply call showGrowthHackScreen() method to launch GrowthHack screen.
+You can also launch the Growth Hack screen when a user taps on a button or any other event. You can simply call showGrowthHackScreen() method to launch GrowthHack screen.
 
 Lets say you want to Launch GrowthHack screen on button click , use following code
 
