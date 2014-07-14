@@ -161,7 +161,7 @@ myCustomButton.setOnClickListener(new OnClickListener()
 );
 </code></pre>
 
-<H3>Getting Launch Message from Dashboard</H3>
+<H3>[Optional]Getting Launch Message from Dashboard</H3>
 
 if you want to use custom event to lauch the GrowthHack and want to show the lauch message configured in your Appvirality Dashboard, you can use <code>AppviralityAPI.launchMessage;</code>. see the following example.
 
@@ -189,4 +189,24 @@ Premium app users can be excluded from showing growth hacks. At the time of init
 <s>AppviralityAPI.init(getApplicationContext());</s>
 AppviralityAPI.isPremiumUser = Premium.Yes;
 </code></pre>
+<H3>[Optional]Custom Fonts</H3>
+
+If you are using any custom font, you set the same to your Appvirality SDK. This makes the GrowthHack UI screen looks more native to your mobile application.
+
+1) Make sure that your custom font files are in "assets" folder
+
+![Alt text](images/custom-fonts.jpg?raw=true)
+
+2) Let Appvirality SDk know your custom font Location, Font name and Font Size. You have two options to set your Blod font <code>AppviralityAPI.Custom_Font_Bold</code> and Normal font <code>AppviralityAPI.Custom_Font_Normal</code>. Font assigned to <code>Custom_Font_Blod</code> will be used for Titles and font assigned to <code>Custom_Font_Normal</code> will be used for normal text.
+
+Font name and font size are separated with ":" and Font Size is optional, if you don't mention the font size, SDK will consider default font size.
+
+For example, if you want to set custom font located in "assets/fonts" folder with font size of "14".
+You can use the following code 
+<pre><code>AppviralityAPI.Custom_Font_Bold = "fonts/Geometric_slab_serif_703_bold.ttf:14";</code></pre>
+
+
+
+
+ 
 
