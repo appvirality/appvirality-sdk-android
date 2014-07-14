@@ -191,13 +191,13 @@ AppviralityAPI.isPremiumUser = Premium.Yes;
 </code></pre>
 <H3>[Optional]Custom Fonts</H3>
 
-If you are using any custom fonts in your application, you set the same to your Appvirality SDK. This makes the GrowthHack UI screens look more native to your mobile app.
+If you are using any custom fonts in your app, you can set the same to your Appvirality SDK. This makes the GrowthHack UI screens look more native to your mobile app.
 
 1) Make sure that your custom font files are in "assets" folder
 
 ![Alt text](images/custom-fonts.jpg?raw=true)
 
-2) Let Appvirality SDk know your custom font Location, Font name and Font Size. You have two options to set your Blod font <code>AppviralityAPI.Custom_Font_Bold</code> and Normal font <code>AppviralityAPI.Custom_Font_Normal</code>. Font assigned to <code>Custom_Font_Blod</code> will be used for Titles and font assigned to <code>Custom_Font_Normal</code> will be used for normal text.
+2) Let Appvirality SDk know your custom font Location, Font name and Font Size. You can set two font variants i.e Blod font <code>AppviralityAPI.Custom_Font_Bold</code> for Titles and Normal font <code>AppviralityAPI.Custom_Font_Normal</code> for description in Growth Hack Screens.
 
 For example, if you want to set custom font located in "assets/fonts" folder with font size of "14".
 You can use the following code 
