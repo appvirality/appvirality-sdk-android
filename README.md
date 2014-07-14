@@ -142,7 +142,7 @@ If you use proguard with your application, there are a set of rules that you wil
 -dontwarn com.appvirality.android.**
 </code></pre>
 
-<H3>[Optional]Launch Growth Hack Screen on Custom Event</H3>
+<H3>[Optional]Launch Growth Hack on Custom Event</H3>
 
 You can also launch the Growth Hack screen when a user taps on a button or anyother event. You can simply call showGrowthHackScreen() method to launch GrowthHack screen.
 
@@ -159,6 +159,26 @@ myCustomButton.setOnClickListener(new OnClickListener()
     }
 }
 );
+</code></pre>
+
+<H4>Getting Launch Message</H4>
+
+if you want to use custom event to lauch the GrowthHack and want to show the lauch message configured in your Appvirality Dashboard, you can use the following code.
+
+Let's say you want to show the launch message on your custom button
+<pre><code>
+// Check for campaign availability and launch message 
+if(AppviralityAPI.isCampaignReady && AppviralityAPI.launchMessage != null)
+{
+ myCustomButton.setText(AppviralityAPI.launchMessage);
+ // make your button visible, since we have everything ready.
+ myCustomButton.setVisibility(View.VISIBLE);
+}
+else
+{
+// makes button invisible, and it doesn't take any space for layout purposes.
+ myCustomButton.setVisibility(View.GONE);
+}
 </code></pre>
 
 <H3>[Optional]Exclude Premium Users</H3>
