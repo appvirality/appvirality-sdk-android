@@ -142,7 +142,7 @@ If you use proguard with your application, there are a set of rules that you wil
 -dontwarn com.appvirality.android.**
 </code></pre>
 
-<H3>[Optional]Launch Growth Hack on Custom Event</H3>
+<H3>[Optional]Custom UI & Launch Growth Hack on Custom Event</H3>
 
 You can also launch the Growth Hack screen when a user taps on a button or any other event. You can simply call showGrowthHackScreen() method to launch GrowthHack screen.
 
@@ -161,44 +161,20 @@ myCustomButton.setOnClickListener(new OnClickListener()
 );
 </code></pre>
 
-Before presenting your custom event UI i.e button or some custom UI, please check for campaign availability. Campaigns will only be available if all the associated campaign images got downloaded from server on background thead.
+Before presenting your custom UI i.e button or some custom UI, please check for campaign availability using <code>AppviralityAPI.isCampaignReady</code>. <code>isCampaignReady</code> returns true, if Campaigns details and associated images downloaded from server on background thead.
 
 <pre><code>
-// Check for campaign availability and launch message 
+// Check for campaign availability 
 if(AppviralityAPI.isCampaignReady)
 {
  myCustomButton.setText(AppviralityAPI.launchMessage);
- // make your button visible, since we have everything ready.
+ // make your button or custom UI visible, since we have everything ready.
  myCustomButton.setVisibility(View.VISIBLE);
 }
 else
 {
-// makes button invisible, and it doesn't take any space for layout purposes.
+// makes button or custom UI invisible, and it doesn't take any space for layout purposes.
  myCustomButton.setVisibility(View.GONE);
-//set the handler for event listener
- AppviralityAPI.setHandlerListener(setListener);
-}
-</code></pre>
-
-
-<H3>[Optional]Getting Launch Message from Dashboard</H3>
-
-If you want to use custom event to lauch the GrowthHack and want to show the lauch message configured in your Appvirality Dashboard, you can use <code>AppviralityAPI.launchMessage;</code>. see the following example.
-
-Let's say you want to show the launch message on your custom button
-<pre><code>
-// Check for campaign availability and launch message 
-if(AppviralityAPI.isCampaignReady)
-{
- myCustomButton.setText(AppviralityAPI.launchMessage);
- // make your button visible, since we have everything ready.
- myCustomButton.setVisibility(View.VISIBLE);
-}
-else
-{
-// makes button invisible, and it doesn't take any space for layout purposes.
- myCustomButton.setVisibility(View.GONE);
- 
 }
 </code></pre>
 
@@ -214,21 +190,21 @@ AppviralityAPI.CampaignHandlerInterface setListener = new AppviralityAPI.Campaig
    @Override
    public void onCampaignReady() {
     myCustomButton.setText(AppviralityAPI.getLaunchMessage());
-    layout.setVisibility(View.VISIBLE);   
+    myCustomButton.setVisibility(View.VISIBLE);   
    }
   };
   
 // Check if campaign available and if campaign not available, subscribe to event listener
-if(!AppviralityAPI.isCampaignReady())
+if(AppviralityAPI.isCampaignReady())
   {
-   layout.setVisibility(View.GONE);
-   //set the handler for event listener
-   AppviralityAPI.setHandlerListener(setListener);
+   myCustomButton.setText(AppviralityAPI.getLaunchMessage());
+   myCustomButton.setVisibility(View.VISIBLE);  
   }
   else
   {
-   txtmessage.setText(AppviralityAPI.getLaunchMessage());
-   layout.setVisibility(View.VISIBLE);   
+   myCustomButton.setVisibility(View.GONE);
+   //set the handler for event listener
+   AppviralityAPI.setHandlerListener(setListener);
   }
 
 </code></pre>
