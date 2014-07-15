@@ -180,7 +180,7 @@ else
 
 <H3>[Optional]Handle "Remind Me Later"</H3>
 
-If user clicks on RemindMeLater for a campaign then he will be presented the same growth hack after 1 day by default. This value is configurable, uou can set "after how many days" you want to show the same campaign to that user.
+If user clicks on RemindMeLater for a campaign then he will be presented the same growth hack after 1 day by default. This value is configurable, you can set "after how many days" you want to show the same campaign to that user.
 
 If you are implementing your own UI to launch the growth hack, you may want to pass the "RemindMeLater" click event to record that user action & user want to see the growth hack later.
 
