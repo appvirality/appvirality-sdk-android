@@ -161,7 +161,7 @@ myCustomButton.setOnClickListener(new OnClickListener()
 );
 </code></pre>
 
-Before presenting your custom UI i.e button or some custom UI, please check for campaign availability using <code>AppviralityAPI.isCampaignReady</code>. <code>isCampaignReady</code> returns true, if Campaigns details and associated images downloaded from server on background thread.
+Before presenting your custom UI i.e button or some custom UI, please check for campaign availability using <code>AppviralityAPI.isCampaignReady()</code>. <code>isCampaignReady()</code> returns true, if Campaigns details and associated images downloaded from server on background thread.
 
 <pre><code>
 // Check for campaign availability 
