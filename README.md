@@ -87,7 +87,7 @@ Add the following lines to your AndroidManifest.xml within the <code>&lt;applica
 6) To use Facebook as a action type (share to claim coupon, etc) in your campaign, you will need a Facebook App ID.
 If you already have a Facebook App, you may want to verify the Facebook App creation process once again <a href="https://github.com/appvirality/appvirality-sdk-android/wiki/Facebook-Integration-with-Appvirality">here</a>. 
 
-If you don't have a Facebook App, you can create one easily by followig the <a href="https://github.com/appvirality/appvirality-sdk-android/wiki/Facebook-Integration-with-Appvirality">steps to create Facebook App</a>.
+If you don't have a Facebook App, you can create one easily by following the <a href="https://github.com/appvirality/appvirality-sdk-android/wiki/Facebook-Integration-with-Appvirality">steps to create Facebook App</a>.
 
 Once you have your facebook app ID, you can add it to the <b>appvirality.properties</b> config file:
 <pre><code>
@@ -146,7 +146,7 @@ If you use proguard with your application, there are a set of rules that you wil
 
 You can also launch the Growth Hack screen when a user taps on a button or any other event. You can simply call showGrowthHackScreen() method to launch GrowthHack screen.
 
-Lets say you want to Launch GrowthHack screen on button click , use following code
+Let's say you want to Launch GrowthHack screen on button click , use following code
 
 <pre><code>
 // Integrate GrowthHack Screen into a button on your view       
@@ -161,7 +161,7 @@ myCustomButton.setOnClickListener(new OnClickListener()
 );
 </code></pre>
 
-Before presenting your custom UI i.e button or some custom UI, please check for campaign availability using <code>AppviralityAPI.isCampaignReady</code>. <code>isCampaignReady</code> returns true, if Campaigns details and associated images downloaded from server on background thead.
+Before presenting your custom UI i.e button or some custom UI, please check for campaign availability using <code>AppviralityAPI.isCampaignReady</code>. <code>isCampaignReady</code> returns true, if Campaigns details and associated images downloaded from server on background thread.
 
 <pre><code>
 // Check for campaign availability 
