@@ -167,7 +167,7 @@ Before presenting your custom UI i.e button or some custom UI, please check for 
 // Check for campaign availability 
 if(AppviralityAPI.isCampaignReady())
 {
- myCustomButton.setText(AppviralityAPI.launchMessage);
+ myCustomButton.setText(AppviralityAPI.getLaunchMessage());
  // make your button or custom UI visible, since we have everything ready.
  myCustomButton.setVisibility(View.VISIBLE);
 }
