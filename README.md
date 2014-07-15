@@ -161,6 +161,26 @@ myCustomButton.setOnClickListener(new OnClickListener()
 );
 </code></pre>
 
+Before presenting your custom event UI i.e button or some custom UI, please check for campaign availability. Campaigns will only be available if all the associated campaign images got downloaded from server on background thead.
+
+<pre><code>
+// Check for campaign availability and launch message 
+if(AppviralityAPI.isCampaignReady)
+{
+ myCustomButton.setText(AppviralityAPI.launchMessage);
+ // make your button visible, since we have everything ready.
+ myCustomButton.setVisibility(View.VISIBLE);
+}
+else
+{
+// makes button invisible, and it doesn't take any space for layout purposes.
+ myCustomButton.setVisibility(View.GONE);
+//set the handler for event listener
+ AppviralityAPI.setHandlerListener(setListener);
+}
+</code></pre>
+
+
 <H3>[Optional]Getting Launch Message from Dashboard</H3>
 
 If you want to use custom event to lauch the GrowthHack and want to show the lauch message configured in your Appvirality Dashboard, you can use <code>AppviralityAPI.launchMessage;</code>. see the following example.
@@ -178,6 +198,7 @@ else
 {
 // makes button invisible, and it doesn't take any space for layout purposes.
  myCustomButton.setVisibility(View.GONE);
+ 
 }
 </code></pre>
 
