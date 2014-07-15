@@ -201,6 +201,7 @@ AppviralityAPI.CampaignHandlerInterface setListner = new AppviralityAPI.Campaign
 if(!AppviralityAPI.isCampaignReady())
   {
    layout.setVisibility(View.GONE);
+   //set the handler for event listner
    AppviralityAPI.setHandlerListener(setListner);
   }
   else
