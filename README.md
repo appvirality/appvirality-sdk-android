@@ -197,7 +197,7 @@ AppviralityAPI.CampaignHandlerInterface setListener = new AppviralityAPI.Campaig
    }
   };
   
-// Check if campaign available and if campaign not available, subscribe to event listner
+// Check if campaign available and if campaign not available, subscribe to event listener
 if(!AppviralityAPI.isCampaignReady())
   {
    layout.setVisibility(View.GONE);
