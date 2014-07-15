@@ -225,12 +225,18 @@ If you are using any custom fonts in your app, you can set the same to your Appv
 
 ![Alt text](images/custom-fonts.jpg?raw=true)
 
-2) Let Appvirality SDK know your custom font Location, Font name and Font Size. You can set two font variants i.e Blod font <code>AppviralityAPI.Custom_Font_Bold</code> for Titles and Normal font <code>AppviralityAPI.Custom_Font_Normal</code> for description in Growth Hack Screens.
+2) Let Appvirality SDK know your custom font Location, Font name and Font Size. You can set two font variants i.e Blod font <code>AppviralityAPI.setBoldFontStyle</code> for Titles and Normal font <code>AppviralityAPI.setNormalFontStyle</code> for description in Growth Hack Screens.
 
 For example, if you want to set custom font located in "assets/fonts" folder with font size of "14".
-You can use the following code 
-<pre><code>AppviralityAPI.Custom_Font_Bold = "fonts/Geometric_slab_serif_703_bold.ttf:14";</code></pre>
+This will set Growth Hack Title font & font size
+<pre><code>AppviralityAPI.setBoldFontStyle("fonts/Geometric_slab_serif_703_bold.ttf", 14);</code></pre>
 
-NOTE: Font name and font size are separated with ":" , both Font Name and Font Size are optional, if you don't mention the font size, SDK will consider default font size.
- 
+You an also set only font name. In this case default font size will be considered.
+This will set Growth Hack Title font
+<pre><code>AppviralityAPI.setBoldFontStyle("fonts/Geometric_slab_serif_703_bold.ttf");</code></pre>
 
+This will set Growth Hack description font and normal text font
+<pre><code>AppviralityAPI.setNormalFontStyle("fonts/Geometric_slab_serif_703_bold.ttf");</code></pre>
+
+If you are not using custom fonts but using different default fonts available in android. you can switch between fonts using following code
+<pre><code>AppviralityAPI.setNormalFontStyle(Typeface.SERIF, Typeface.NORMAL);</code></pre>
