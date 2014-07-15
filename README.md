@@ -163,12 +163,12 @@ myCustomButton.setOnClickListener(new OnClickListener()
 
 <H3>[Optional]Getting Launch Message from Dashboard</H3>
 
-if you want to use custom event to lauch the GrowthHack and want to show the lauch message configured in your Appvirality Dashboard, you can use <code>AppviralityAPI.launchMessage;</code>. see the following example.
+If you want to use custom event to lauch the GrowthHack and want to show the lauch message configured in your Appvirality Dashboard, you can use <code>AppviralityAPI.launchMessage;</code>. see the following example.
 
 Let's say you want to show the launch message on your custom button
 <pre><code>
 // Check for campaign availability and launch message 
-if(AppviralityAPI.isCampaignReady && AppviralityAPI.launchMessage != null)
+if(AppviralityAPI.isCampaignReady)
 {
  myCustomButton.setText(AppviralityAPI.launchMessage);
  // make your button visible, since we have everything ready.
@@ -179,6 +179,36 @@ else
 // makes button invisible, and it doesn't take any space for layout purposes.
  myCustomButton.setVisibility(View.GONE);
 }
+</code></pre>
+
+<H3>[Optional]Event Listner for Campaign Availability</H3>
+
+This is useful when you are implementing "Launch Growth Hack on Custom Event". 
+Appvirality SDK fetches available campaigns and images asynchronously. You can get notified whenever campaign details are available. To get notified please implement <code>CampaignHandlerInterface</code> interface and set the handler for event listner <code>AppviralityAPI.setHandlerListener</code>.
+
+For Example you want to show your custom event UI based on campaign details availability, follow the given sample
+<pre><code>
+// implement "CampaignHandlerInterface" interface to handle the event
+AppviralityAPI.CampaignHandlerInterface setListner = new AppviralityAPI.CampaignHandlerInterface() {   
+   @Override
+   public void onCampaignReady() {
+    myCustomButton.setText(AppviralityAPI.getLaunchMessage());
+    layout.setVisibility(View.VISIBLE);   
+   }
+  };
+  
+// Check if campaign available and if campaign not available, subscribe to event listner
+if(!AppviralityAPI.isCampaignReady())
+  {
+   layout.setVisibility(View.GONE);
+   AppviralityAPI.setHandlerListener(setListner);
+  }
+  else
+  {
+   txtmessage.setText(AppviralityAPI.getLaunchMessage());
+   layout.setVisibility(View.VISIBLE);   
+  }
+
 </code></pre>
 
 <H3>[Optional]Exclude Premium Users</H3>
