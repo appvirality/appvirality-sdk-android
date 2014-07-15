@@ -155,7 +155,7 @@ myCustomButton.setOnClickListener(new OnClickListener()
     @Override
     public void onClick(View view)
     {
-        Appvirality.showGrowthHackScreen(MyActivity.this);                
+        AppviralityAPI.showGrowthHackScreen(MyActivity.this);                
     }
 }
 );
@@ -191,7 +191,7 @@ remindMeLaterButton.setOnClickListener(new OnClickListener()
     @Override
     public void onClick(View view)
     {
-        Appvirality.remindLater(); 
+        AppviralityAPI.remindLater(); 
         //Hide your custom UI
         myCustomButton.setVisibility(View.GONE);
     }
