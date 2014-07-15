@@ -178,7 +178,7 @@ else
 }
 </code></pre>
 
-<H3>[Optional]Event Listener for Campaign Availability</H3>
+<H3>[Optional]Event Listener on Campaign Availability</H3>
 
 This is useful when you are implementing "Launch Growth Hack on Custom Event". 
 Appvirality SDK fetches available campaigns and images asynchronously. You can get notified whenever campaign details are available. To get notified please implement <code>CampaignHandlerInterface</code> interface and set the handler for event listener <code>AppviralityAPI.setHandlerListener</code>.
