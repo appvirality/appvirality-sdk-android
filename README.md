@@ -149,7 +149,7 @@ You can also launch the Growth Hack screen when a user taps on a button or any o
 Let's say you want to Launch GrowthHack screen on button click , use following code
 
 <pre><code>
-// Integrate GrowthHack Screen into a button on your view       
+// Handle onClick event of your custom UI to launch the Growth Hack screen       
 myCustomButton.setOnClickListener(new OnClickListener()
 {
     @Override
@@ -176,6 +176,27 @@ else
 // makes button or custom UI invisible, and it doesn't take any space for layout purposes.
  myCustomButton.setVisibility(View.GONE);
 }
+</code></pre>
+
+<H3>[Optional]Handle "Remind Me Later"</H3>
+
+If user clicks on RemindMeLater for a campaign then he will be presented the same growth hack after 1 day by default. This value is configurable, uou can set "after how many days" you want to show the same campaign to that user.
+
+If you are implementing your own UI to launch the growth hack, you may want to pass the "RemindMeLater" click event to record that user action & user want to see the growth hack later.
+
+<pre><code>
+// Handle RemindMeLater and Pass the event to Appvirality SDK       
+remindMeLaterButton.setOnClickListener(new OnClickListener()
+{
+    @Override
+    public void onClick(View view)
+    {
+        Appvirality.remindLater(); 
+        //Hide your custom UI
+        myCustomButton.setVisibility(View.GONE);
+    }
+}
+);
 </code></pre>
 
 <H3>[Optional]Event Listener on Campaign Availability</H3>
