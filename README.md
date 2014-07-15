@@ -181,15 +181,15 @@ else
 }
 </code></pre>
 
-<H3>[Optional]Event Listner for Campaign Availability</H3>
+<H3>[Optional]Event Listener for Campaign Availability</H3>
 
 This is useful when you are implementing "Launch Growth Hack on Custom Event". 
-Appvirality SDK fetches available campaigns and images asynchronously. You can get notified whenever campaign details are available. To get notified please implement <code>CampaignHandlerInterface</code> interface and set the handler for event listner <code>AppviralityAPI.setHandlerListener</code>.
+Appvirality SDK fetches available campaigns and images asynchronously. You can get notified whenever campaign details are available. To get notified please implement <code>CampaignHandlerInterface</code> interface and set the handler for event listener <code>AppviralityAPI.setHandlerListener</code>.
 
 For Example you want to show your custom event UI based on campaign details availability, follow the given sample
 <pre><code>
 // implement "CampaignHandlerInterface" interface to handle the event
-AppviralityAPI.CampaignHandlerInterface setListner = new AppviralityAPI.CampaignHandlerInterface() {   
+AppviralityAPI.CampaignHandlerInterface setListener = new AppviralityAPI.CampaignHandlerInterface() {   
    @Override
    public void onCampaignReady() {
     myCustomButton.setText(AppviralityAPI.getLaunchMessage());
@@ -201,8 +201,8 @@ AppviralityAPI.CampaignHandlerInterface setListner = new AppviralityAPI.Campaign
 if(!AppviralityAPI.isCampaignReady())
   {
    layout.setVisibility(View.GONE);
-   //set the handler for event listner
-   AppviralityAPI.setHandlerListener(setListner);
+   //set the handler for event listener
+   AppviralityAPI.setHandlerListener(setListener);
   }
   else
   {
