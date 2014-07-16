@@ -155,7 +155,9 @@ myCustomButton.setOnClickListener(new OnClickListener()
     @Override
     public void onClick(View view)
     {
-        AppviralityAPI.showGrowthHackScreen(MyActivity.this);                
+        AppviralityAPI.showGrowthHackScreen(MyActivity.this); 
+        //Hide your custom UI to make sure it will not be shown again to the same user.
+        myCustomButton.setVisibility(View.GONE);
     }
 }
 );
