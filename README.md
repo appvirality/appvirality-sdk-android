@@ -263,3 +263,16 @@ This will set Growth Hack description font and normal text font
 
 If you are not using custom fonts but using different default fonts available in android. you can switch between fonts using following code
 <pre><code>AppviralityAPI.setNormalFontStyle(Typeface.SERIF, Typeface.NORMAL);</code></pre>
+
+<H3>[Optional]Campaign Controls</H3>
+
+You can also control when to show a campaign to a particular user. This can be done when you are integrating the SDK in your App. 
+
+1) Number of times that a particular user can see the campaign(default value = 4 times)
+<pre><code>AppviralityAPI.Number_Of_Times_To_Show_Campaign = 2;</code></pre>
+
+2) Time lapse in showing the campaign when a user opts for Remind Later(default value = 24 hrs)
+<pre><code>AppviralityAPI.TimeLaps_To_Show_Campaign_onRemindLater = 48;</code></pre>
+
+3) Show campaign until remind later count reaches some value(default value = 3 times) 
+<pre><code>AppviralityAPI.Show_campaign_until_remind_later_count = 2;</code></pre>
