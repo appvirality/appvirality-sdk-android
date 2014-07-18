@@ -164,7 +164,7 @@ myCustomButton.setOnClickListener(new OnClickListener()
 );
 </code></pre>
 
-Growth Hack will not be shown until unless all the campaign details and images are downloaded from server. These details get downloaded asynchoronously without effecting your main UI thread. Campaign details may not be ready as soon as you initialize the Appvirality SDK. Hence make your custom UI visible by implementing the <code>CampaignHandlerInterface</code> interface and setting event listener call back using <code>setHandlerListener</code>.
+Growth Hack will not be shown until unless all the campaign details and images are downloaded from server. These details get downloaded asynchronously without affecting your main UI thread. Campaign details may not be ready as soon as you initialize the Appvirality SDK. Hence make your custom UI visible by implementing the <code>CampaignHandlerInterface</code> interface and setting event listener call back using <code>setHandlerListener</code>.
 
 Event listener will get notified as soon as the campaign details are ready.
 
