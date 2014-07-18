@@ -204,7 +204,9 @@ remindMeLaterButton.setOnClickListener(new OnClickListener()
 <H3>[Optional]Event Listener on Campaign Availability</H3>
 
 This is useful when you are implementing "Launch Growth Hack on Custom Event". 
-Appvirality SDK fetches available campaigns and images asynchronously. You can get notified whenever campaign details are available. To get notified please implement <code>CampaignHandlerInterface</code> interface and set the handler for event listener <code>AppviralityAPI.setHandlerListener</code>.
+Appvirality SDK fetches available campaigns and images asynchronously. please subscribe for event listener only if the campaign details are not ready by the time you check for "isCampaignReady()". If the campaign details are already downloaded before you suscribe for event listener, event listener will never be called. Hence check for campaign details availability using <code>isCampaignReady()</code> method before subscribing for Event Listener.
+
+Once you subscribe for Event Listener, you will get notified whenever campaign details are ready.To get notified please implement <code>CampaignHandlerInterface</code> interface and set the handler for event listener <code>AppviralityAPI.setHandlerListener</code>.
 
 NOTE:  <b>If the campaign details are ready by the time you set the event listener, event will not be raised. Ideally, you have to check for campaign details availability and if they are not available then only subscribe for the event listener.</b>
 
