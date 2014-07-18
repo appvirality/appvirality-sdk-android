@@ -158,26 +158,28 @@ myCustomButton.setOnClickListener(new OnClickListener()
         AppviralityAPI.showGrowthHackScreen(MyActivity.this); 
         //Hide your custom UI to make sure it will not be shown again to the same user.
         myCustomButton.setVisibility(View.GONE);
+        remindLaterButton.setVisibility(View.GONE);
     }
 }
 );
 </code></pre>
 
-Before presenting your custom UI i.e button or some custom UI, please check for campaign availability using <code>AppviralityAPI.isCampaignReady()</code>. <code>isCampaignReady()</code> returns true, if Campaigns details and associated images downloaded from server on background thread.
+Growth Hack will not be shown until unless all the campaign details and images are downloaded from server. These details get downloaded asynchoronously without effecting your main UI thread. Campaign details may not be ready as soon as you initialize the Appvirality SDK. Hence make your custom UI visible by implementing the <code>CampaignHandlerInterface</code> interface and setting event listener call back using <code>setHandlerListener</code>.
+
+Event listener will get notified as soon as the campaign details are ready.
+
+Follow the given code snippet:
 
 <pre><code>
-// Check for campaign availability 
-if(AppviralityAPI.isCampaignReady())
-{
- myCustomButton.setText(AppviralityAPI.getLaunchMessage());
- // make your button or custom UI visible, since we have everything ready.
- myCustomButton.setVisibility(View.VISIBLE);
-}
-else
-{
-// makes button or custom UI invisible, and it doesn't take any space for layout purposes.
- myCustomButton.setVisibility(View.GONE);
-}
+AppviralityAPI.setHandlerListener(new AppviralityAPI.CampaignHandlerInterface() {
+            @Override
+            public void onCampaignReady() {
+            	//make your custom UI visible on campaign ready
+            	myCustomButton.setText(AppviralityAPI.getLaunchMessage());
+            	myCustomButton.setVisibility(View.VISIBLE);
+            	remindLaterButton.setVisibility(View.VISIBLE);
+            }
+        });
 </code></pre>
 
 <H3>[Optional]Handle "Remind Me Later"</H3>
@@ -196,44 +198,10 @@ remindMeLaterButton.setOnClickListener(new OnClickListener()
         AppviralityAPI.remindLater(); 
         //Hide your custom UI
         myCustomButton.setVisibility(View.GONE);
+        remindLaterButton.setVisibility(View.GONE);
     }
 }
 );
-</code></pre>
-
-<H3>[Optional]Event Listener on Campaign Availability</H3>
-
-This is useful when you are implementing "Launch Growth Hack on Custom Event". 
-Appvirality SDK fetches available campaigns and images asynchronously. please subscribe for event listener only if the campaign details are not ready by the time you check for "isCampaignReady()". If the campaign details are already downloaded before you suscribe for event listener, event listener will never be called. Hence check for campaign details availability using <code>isCampaignReady()</code> method before subscribing for Event Listener.
-
-Once you subscribe for Event Listener, you will get notified whenever campaign details are ready.To get notified please implement <code>CampaignHandlerInterface</code> interface and set the handler for event listener <code>AppviralityAPI.setHandlerListener</code>.
-
-NOTE:  <b>If the campaign details are ready by the time you set the event listener, event will not be raised. Ideally, you have to check for campaign details availability and if they are not available then only subscribe for the event listener.</b>
-
-For Example you want to show your custom event UI based on campaign details availability, follow the given sample
-<pre><code>
-// implement "CampaignHandlerInterface" interface to handle the event
-AppviralityAPI.CampaignHandlerInterface setListener = new AppviralityAPI.CampaignHandlerInterface() {   
-   @Override
-   public void onCampaignReady() {
-    myCustomButton.setText(AppviralityAPI.getLaunchMessage());
-    myCustomButton.setVisibility(View.VISIBLE);   
-   }
-  };
-  
-// Check if campaign available and if campaign not available, subscribe to event listener
-if(AppviralityAPI.isCampaignReady())
-  {
-   myCustomButton.setText(AppviralityAPI.getLaunchMessage());
-   myCustomButton.setVisibility(View.VISIBLE);  
-  }
-  else
-  {
-   myCustomButton.setVisibility(View.GONE);
-   //set the handler for event listener
-   AppviralityAPI.setHandlerListener(setListener);
-  }
-
 </code></pre>
 
 <H3>[Optional]Exclude Premium Users</H3>
