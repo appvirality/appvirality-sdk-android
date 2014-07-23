@@ -144,7 +144,7 @@ If you use proguard with your application, there are a set of rules that you wil
 
 <H3>[Optional]Custom UI & Launch Growth Hack on Custom Event</H3>
 
-You can also launch the Growth Hack screen when a user taps on a button or any other event. You can simply call showGrowthHackScreen() method to launch GrowthHack screen. Before doing this you have to implement the <b>CampaignHandlerInterface</b>.
+Instead of calling <code>showLaunchBar</code> method, you can implement custom UI(i.e button) to launch the growth Hack. You can simply call showGrowthHackScreen() method to launch GrowthHack screen.But before calling this method, you have to implement the <b>CampaignHandlerInterface</b>. The interface method "onCampaignReady()" actually checks if the cmpaign is ready to show or not(i.e whether campaign details & images are downloaded successfully or not) and user eligibility to see the campaign and records the analytics such as campaign impressions etc.
 
 Growth Hack will not be shown until unless all the campaign details and images are downloaded from server. These details get downloaded asynchronously without affecting your main UI thread. Campaign details may not be ready as soon as you initialize the Appvirality SDK. Hence make your custom UI visible by implementing the <code>CampaignHandlerInterface</code> interface and setting event listener call back using <code>setHandlerListener</code>.
 
