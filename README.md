@@ -144,25 +144,7 @@ If you use proguard with your application, there are a set of rules that you wil
 
 <H3>[Optional]Custom UI & Launch Growth Hack on Custom Event</H3>
 
-You can also launch the Growth Hack screen when a user taps on a button or any other event. You can simply call showGrowthHackScreen() method to launch GrowthHack screen.
-
-Let's say you want to Launch GrowthHack screen on button click , use following code
-
-<pre><code>
-// Handle onClick event of your custom UI to launch the Growth Hack screen       
-myCustomButton.setOnClickListener(new OnClickListener()
-{
-    @Override
-    public void onClick(View view)
-    {
-        AppviralityAPI.showGrowthHackScreen(MyActivity.this); 
-        //Hide your custom UI to make sure it will not be shown again to the same user.
-        myCustomButton.setVisibility(View.GONE);
-        remindLaterButton.setVisibility(View.GONE);
-    }
-}
-);
-</code></pre>
+You can also launch the Growth Hack screen when a user taps on a button or any other event. You can simply call showGrowthHackScreen() method to launch GrowthHack screen. Before doing this you have to implement the <b>CampaignHandlerInterface</b>.
 
 Growth Hack will not be shown until unless all the campaign details and images are downloaded from server. These details get downloaded asynchronously without affecting your main UI thread. Campaign details may not be ready as soon as you initialize the Appvirality SDK. Hence make your custom UI visible by implementing the <code>CampaignHandlerInterface</code> interface and setting event listener call back using <code>setHandlerListener</code>.
 
@@ -181,6 +163,26 @@ AppviralityAPI.setHandlerListener(new AppviralityAPI.CampaignHandlerInterface() 
             }
         });
 </code></pre>
+ 
+Let's say you want to Launch GrowthHack screen on button click , use following code
+
+<pre><code>
+// Handle onClick event of your custom UI to launch the Growth Hack screen       
+myCustomButton.setOnClickListener(new OnClickListener()
+{
+    @Override
+    public void onClick(View view)
+    {
+        AppviralityAPI.showGrowthHackScreen(MyActivity.this); 
+        //Hide your custom UI to make sure it will not be shown again to the same user.
+        myCustomButton.setVisibility(View.GONE);
+        remindLaterButton.setVisibility(View.GONE);
+    }
+}
+);
+</code></pre>
+
+
 
 <H3>[Optional]Handle "Remind Me Later"</H3>
 
