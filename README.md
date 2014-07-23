@@ -250,3 +250,20 @@ You can also control when to show a campaign to a particular user. This can be d
 
 3) Show campaign until remind later count reaches some value(default value = 3 times) 
 <pre><code>AppviralityAPI.Show_campaign_until_remind_later_count = 2;</code></pre>
+
+<H3>[Optional]Custom Domain for Landing Page</H3>
+
+Landing page URL can be customized with your brand domain name. Add CNAME record in your domain DNS settings to show your custom domain name in social action share URL(i.e. Landing page URL). 
+
+To achieve this you have to do the following 2 steps
+
+1) Point your CNAME record to "www.appvirality.com"
+
+Example: if your domain is "example.com" you want to see your Appvirality landing page or share url starting with this domain "r.example.com" , then add CNAME record with host name as "r" and point to "www.appvirality.com"
+
+2) Let us know you are using custom domain for landing page in your Appvirality dashboard. Enter your custom URL(domain) in your app settings page.
+
+Example: In this case you have to enter "r.example.com"
+
+That's it. All your social action url will use this custom domain.
+
