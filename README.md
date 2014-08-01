@@ -257,9 +257,9 @@ Landing page URL can be customized with your brand domain name. Add CNAME record
 
 To achieve this you have to do the following 2 steps
 
-1) Point your CNAME record to "www.appvirality.com"
+1) Point your CNAME record to "r.appvirality.com"
 
-Example: if your domain is "example.com" you want to see your Appvirality landing page or share url starting with this domain "r.example.com" , then add CNAME record with host name as "r" and point to "www.appvirality.com"
+Example: if your domain is "example.com" you want to see your Appvirality landing page or share url starting with this domain "r.example.com" , then add CNAME record with host name as "r" and point to "r.appvirality.com"
 
 2) Let us know that you are using custom domain for landing page in your Appvirality dashboard. Enter your custom URL(domain) in your app settings page.
 
