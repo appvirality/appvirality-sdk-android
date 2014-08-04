@@ -251,6 +251,9 @@ You can also control when to show a campaign to a particular user. This can be d
 3) Show campaign until remind later count reaches some value(default value = 3 times) 
 <pre><code>AppviralityAPI.Show_campaign_until_remind_later_count = 2;</code></pre>
 
+4) Show campaign with some Delay(milli seconds). By defalut campaign will be launched with a delay of 2 seconds. you can changed the launch delay using <code>Campaign_Launch_Delay</code>  
+<pre><code>AppviralityAPI.Campaign_Launch_Delay = 2000;</code></pre>
+
 <H3>[Optional]Custom Domain for Landing Page</H3>
 
 Landing page URL can be customized with your brand domain name. Add CNAME record in your domain DNS settings to show your custom domain name in social action share URL(i.e. Landing page URL). 
