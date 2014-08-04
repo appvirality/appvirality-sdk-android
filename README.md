@@ -251,7 +251,7 @@ You can also control when to show a campaign to a particular user. This can be d
 3) Show campaign until remind later count reaches some value(default value = 3 times) 
 <pre><code>AppviralityAPI.Show_campaign_until_remind_later_count = 2;</code></pre>
 
-4) Show campaign with some Delay(milli seconds). By defalut campaign will be launched with a delay of 2 seconds. you can changed the launch delay using <code>Campaign_Launch_Delay</code>  
+4) By default campaign will be shown with a delay of 2 seconds. You can change the launch delay using <code>Campaign_Launch_Delay</code>  
 <pre><code>AppviralityAPI.Campaign_Launch_Delay = 2000;</code></pre>
 
 <H3>[Optional]Custom Domain for Landing Page</H3>
