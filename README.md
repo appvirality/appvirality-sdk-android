@@ -130,6 +130,6 @@ You have successfully completed the integration process.
 
 Sitback and witch Appvirality in action by creating the campaigns from <a href="http://www.appvirality.com/DashBoard">Appvirality Dashboard.</a>
 
-<H3>Want more Customisation:</H3>
+<H3>Need more Customisation:</H3>
 
 Please have a look at our Wiki page
