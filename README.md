@@ -133,3 +133,18 @@ Sitback and witch Appvirality in action by creating the campaigns from <a href="
 <H3>Need more Customization:</H3>
 
 Please have a look at our [Wiki page](https://github.com/appvirality/appvirality-sdk-android/wiki)
+
+1. [Getting Started With Appvirality Android SDK Integration](https://github.com/appvirality/appvirality-sdk-android#integrating-appvirality-into-your-app)
+2. Growth Hack Selection and Campaign Creation
+3. [Facebook Integration with Appvirality](https://github.com/appvirality/appvirality-sdk-android/wiki/Facebook-Integration-with-Appvirality)
+4. [Proguard Configuration](https://github.com/appvirality/appvirality-sdk-android/wiki/Proguard-Configuration)
+5. [Optional] Twitter Integration with Appvirality
+6. [Optional] [Custom UI & Growth Hacks on Custom Events](https://github.com/appvirality/appvirality-sdk-android/wiki/Custom-UI-&-Growth-Hacks-on-Custom-Events)
+7. [Optional] [Exclude Premium Users](https://github.com/appvirality/appvirality-sdk-android/wiki/Exclude-Premium-Users)
+8. [Optional] [Custom Fonts](https://github.com/appvirality/appvirality-sdk-android/wiki/Using-Custom-Fonts)
+9. [Optional] [Campaign Controls](https://github.com/appvirality/appvirality-sdk-android#optionalcampaign-controls)
+10. [Optional] [Dynamic Share Message](https://github.com/appvirality/appvirality-sdk-android/wiki/Dynamic-Share-Message)
+11. [Optional] [Remind Later Settings](https://github.com/appvirality/appvirality-sdk-android/wiki/Remind-Later-Settings)
+12. [Optional] [Using Custom Domain for Landing Page](https://github.com/appvirality/appvirality-sdk-android/wiki/Using-Custom-Domain-for-Landing-Page)
+13. [Optional] [Using Multiple Android Install Referrers](https://github.com/appvirality/appvirality-sdk-android/wiki/Using-Multiple-Android-Install-Referrers)
+14. [Optional] [To Whom and When to Show Growth Hack](https://github.com/appvirality/appvirality-sdk-android/wiki/To-Whom-and-When-to-Show-Growth-Hack)
