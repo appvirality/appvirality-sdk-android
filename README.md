@@ -132,4 +132,4 @@ Sitback and witch Appvirality in action by creating the campaigns from <a href="
 
 <H3>Need more Customization:</H3>
 
-Please have a look at our Wiki page
+Please have a look at our [Wiki page](https://github.com/appvirality/appvirality-sdk-android/wiki)
