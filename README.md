@@ -81,6 +81,7 @@ Add the following lines to your AndroidManifest.xml within the <code>&lt;applica
             &lt;/intent-filter&gt;
         &lt;/receiver&gt;
 </code></pre>
+<b>NOTE : Google Play Store will only deliver referrer information to a single INSTALL_REFERRER receiver. If your app has multiple install referrer in AndroidManifest.xml file. please follow the steps given here [Using Multiple Android Install Referrers](https://github.com/appvirality/appvirality-sdk-android/wiki/Using-Multiple-Android-Install-Referrers)</b> 
 
 <H4>Configure Facebook Integration</H4>
 
