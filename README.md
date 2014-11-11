@@ -1,8 +1,8 @@
-Appvirality Android SDK
+AppVirality Android SDK
 =======================
 
 <H3>Introduction:</H3>
-Appvirality is a Plug and Play Growth Hacking Toolkit for Mobile Apps.
+AppVirality is a Plug and Play Growth Hacking Toolkit for Mobile Apps.
 
 It helps to identify and implement the right growth hacks, within seconds. No Coding Required. We are providing easy to integrate SDK's for Android, iOS(coming soon) and Windows Phone(coming soon) Platforms.
 
@@ -13,9 +13,9 @@ Integrating Appvirality into your App
 
 <H3>Getting Started:</H3>
 
-1) Download the latest Appvirality SDK from http://www.appvirality.com and unzip the archive.<br/>
+1) Download the latest App Virality SDK from http://www.appvirality.com and unzip the archive.<br/>
 
-![Alt text](images/download-SDK.jpg?raw=true "You can see this in Appvirality Dashboard")
+![Alt text](images/download-SDK.jpg?raw=true "You can see this in AppVirality Dashboard")
 
 2) We are providing SDK in the form of <b>jar</b> file. Simply copy the <b>AppviralitySDK.jar</b> into your <b>libs</b> folder of Android eclipse project.
 
@@ -31,7 +31,7 @@ Integrating Appvirality into your App
 
 ![Alt text](images/setup-av-keys.jpg?raw=true)
 
-   Within this file, enter your Appvirality App key:
+   Within this file, enter your AppVirality App key:
    
 <pre><code>
 #Appvirality App Key
