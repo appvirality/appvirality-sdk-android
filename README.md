@@ -38,7 +38,7 @@ Integrating Appvirality into your App
 appvirality.appkey = 02e1r5e99b94f56t69f42a32a00d2e7ff
 </code></pre>
 
-NOTE: Don't forget to replace the key "02e1r5e99b94f56t69f42a32a00d2e7ff" with your App key.
+NOTE: Don't forget to replace the key "02e1r5e99b94f56t69f42a32a00d2e7ff" with your App Key.
 
 <H4>Configure your AndroidManifest.xml</H4>
 
