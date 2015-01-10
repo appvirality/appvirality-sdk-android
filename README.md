@@ -11,13 +11,15 @@ Appvirality Android SDK supports from Android (API level 8) and higher.
 Integrating Appvirality into your App
 -------------------------------------
 
+<H4>Personalized-Referrals GrowthHack</H4>
+
+[SDK Integration Steps for Personalized-Referrals GrowthHack](https://github.com/appvirality/appvirality-sdk-android/wiki/Using-Multiple-Android-Install-Referrers)
+
 <H4>Customer Retention GrowthHack</H4>
 
 [SDK Integration Steps for Customer Retention GrowthHack](https://github.com/appvirality/appvirality-sdk-android/wiki/Using-Multiple-Android-Install-Referrers)
 
-<H4>Personalized-Referrals GrowthHack</H4>
 
-[SDK Integration Steps for Personalized-Referrals GrowthHack](https://github.com/appvirality/appvirality-sdk-android/wiki/Using-Multiple-Android-Install-Referrers)
 
 
 
