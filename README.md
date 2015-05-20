@@ -22,9 +22,6 @@ Integrating Appvirality into your App
 
 [SDK Integration Steps for Personalized-Referrals GrowthHack](https://github.com/appvirality/appvirality-sdk-android/wiki/Personalized-In-App-Referrals)
 
-<H4>Customer Retention GrowthHack</H4>
-
-[SDK Integration Steps for Customer Retention GrowthHack](https://github.com/appvirality/appvirality-sdk-android/wiki/AppVirality-SDK-Integration-Steps-for-Customer-Retention-GrowthHack)
 
 
 
