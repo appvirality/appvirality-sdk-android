@@ -1,5 +1,7 @@
-AppVirality Android SDK
+AppVirality Android SDK [Deprecated]
 =======================
+
+*** Note: This version has been deprecated,please use our latest SDK Version [2.0.3](https://github.com/appvirality/AppVirality-Android-SDK-2.0) and help document at [dev.appvirality.com](http://dev.appvirality.com/docs/appvirality-docs/android-sdk-integration/)
 
 <H3>Introduction:</H3>
 AppVirality is a Plug and Play Growth Hacking Toolkit for Mobile Apps.
@@ -11,7 +13,7 @@ Appvirality Android SDK supports from Android (API level 8) and higher.
 Version History
 ---------------
 
-Current Version : 1.1.27
+Current Version : 2.0.3
 
 [Version Info](https://github.com/appvirality/appvirality-sdk-android/wiki/Android-SDK-Version-History)
 
