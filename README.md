@@ -13,7 +13,7 @@ Appvirality Android SDK supports from Android (API level 8) and higher.
 Version History
 ---------------
 
-Current Version : 2.0.3
+Current Version : 2.0.4
 
 [Version Info](https://github.com/appvirality/appvirality-sdk-android/wiki/Android-SDK-Version-History)
 
